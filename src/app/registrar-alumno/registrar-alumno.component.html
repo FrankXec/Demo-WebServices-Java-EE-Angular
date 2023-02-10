@@ -1,0 +1,34 @@
+<div class="col-md-6 offset-md-3">
+    <h3 class="text-center">Registro de Alumno</h3>
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label>Name: </label>
+            <input type="text" 
+            class="form-control"
+            id="name"
+            [(ngModel)] = "alumno.name"
+            name="name"
+            />
+        </div>
+        <div class="form-group">
+            <label>Lastname: </label>
+            <input type="text" 
+            class="form-control"
+            id="lastname"
+            [(ngModel)] = "alumno.lastName"
+            name="lastname"
+            />
+        </div>
+        <div class="form-group">
+            <label>Profession: </label>
+            <input type="number" 
+            class="form-control"
+            id="profession"
+            [(ngModel)] = "alumno.profession"
+            name="profession"
+            />
+        </div>
+
+        <button class="btn btn-success">Guardar</button>
+    </form>
+</div>
